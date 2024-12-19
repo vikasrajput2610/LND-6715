@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Adding Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind Blog Page</title>
+  </head>
+  <body class="font-body">
+    <!-- container div starts here -->
+    <div class="container mx-auto">
+      <!-- Header section starts here -->
+      <section>
+        <div class="text-center py-8 sm:py-10 flex justify-center items-center">
+          <h1 class="text-3xl md:text-5xl font-bold font-title text-secondary">
+            Tailwind Blogs
+          </h1>
+        </div>
+        <div class="md:flex text-center md:justify-between">
+          <nav class="md:flex items-center font-title w-auto">
+            <ul class="text-lg space-x-4">
+              <li class="my-3 md:my-0 inline-block">
+                <a
+                  href="#"
+                  class="text-primary hover:text-secondary transition duration-300"
+                  >Home</a
+                >
+              </li>
+              <li class="my-3 md:my-0 inline-block">
+                <a
+                  href="#"
+                  class="text-primary hover:text-secondary transition duration-300"
+                  >About</a
+                >
+              </li>
+              <li class="my-3 md:my-0 inline-block">
+                <a
+                  href="#"
+                  class="text-primary hover:text-secondary transition duration-300"
+                  >Contact</a
+                >
+              </li>
+              <li class="my-3 md:my-0 inline-block">
+                <a
+                  href="#"
+                  class="text-primary hover:text-secondary transition duration-300"
+                  >Products</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <input
+            type="search"
+            class="border-2 border-blue-200 px-8 py-2 rounded-full shadow-inner focus:outline-none focus:ring-1"
+            placeholder="Search..."
+          />
+        </div>
+      </section>
+
+      <section class="pt-12">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 lg:gap-x-12 gap-y-8 sm:gap-y-12 lg:gap-y-16"
+        >
+
+          <div class="col-span-1 md:col-span-2 lg:col-span-3">
+            <a
+              href="#"
+              class="border border-gray-100 block md:flex rounded-3xl overflow-hidden transition duration-300 hover:shadow-lg"
+            >
+              <div class="md:w-1/2">
+                <img
+                  src="https://picsum.photos/id/80/200/150"
+                  alt="blog image 1"
+                  class="h-full w-full"
+                />
+              </div>
+              <div class="md:w-1/2 p-4 md:p-7">
+                <p
+                  class="px-3 py-1 bg-blue-200 rounded text-secondary text-xs inline"
+                >
+                  FEATURED
+                </p>
+
+                <h2
+                  class="font-bold text-primary text-xl md:text-2xl font-title py-3 transition duration-300 hover:text-secondary"
+                >
+                  What is a brand style guide?
+                </h2>
+                <p class="text-neutral pb-5">
+                  Basically, a brand style guide is a reference sheet that tells
+                  about how a company’s logo, tagline, colors, etc. visuals
+                  should be used. The guide, therefore, has some examples of how
+                  a particular company’s logo must look in all situations.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="blog-card hover:shadow-lg">
+            <a href="#">
+              <img src="https://picsum.photos/id/20/500/300" alt="" />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-neutral pb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                  magnam exercitationem unde neque! Iste consequuntur ab, unde
+                  libero molestiae animi.
+                </p>
+                <div class="flex items-center ">
+                  <img
+                    src="https://picsum.photos/id/3/500/300"
+                    alt=""
+                    class="h-9 w-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-primary font-bold">John Smith</h6>
+                    <p class="text-xs text-neutral">Brand Marketer</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog-card hover:shadow-lg">
+            <a href="#">
+              <img src="https://picsum.photos/id/30/500/300" alt="" />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-neutral pb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                  magnam exercitationem unde neque! Iste consequuntur ab, unde
+                  libero molestiae animi.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="images/author2.jpg"
+                    alt=""
+                    class="h-9 w-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-primary font-bold">John Smith</h6>
+                    <p class="text-xs text-neutral">Brand Marketer</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog-card hover:shadow-lg">
+            <a href="#">
+              <img src="https://picsum.photos/id/40/500/300" alt="" />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-neutral pb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                  magnam exercitationem unde neque! Iste consequuntur ab, unde
+                  libero molestiae animi.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="images/author1.jpg"
+                    alt=""
+                    class="h-9 w-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-primary font-bold">John Smith</h6>
+                    <p class="text-xs text-neutral">Brand Marketer</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Last row starts here -->
+          <div class="blog-card hover:shadow-lg col-span-1 lg:col-span-2">
+            <a href="#">
+              <img src="https://picsum.photos/id/50/1000/500" alt="" class="lg:h-72 w-full" />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-neutral pb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                  nisi iusto esse sapiente est! Accusamus labore voluptas
+                  voluptatibus tempore ipsum.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="images/author1.jpg"
+                    alt=""
+                    class="h-9 w-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-primary font-bold">John Smith</h6>
+                    <p class="text-xs text-neutral">Brand Marketer</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog-card hover:shadow-lg">
+            <a href="#">
+              <img src="https://picsum.photos/id/60/500/300" alt="" />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-neutral pb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                  magnam exercitationem unde neque! Iste consequuntur ab, unde
+                  libero molestiae animi.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="images/author1.jpg"
+                    alt=""
+                    class="h-9 w-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-primary font-bold">John Smith</h6>
+                    <p class="text-xs text-neutral">Brand Marketer</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subscribe section -->
+      <section>
+        <div class="text-center mx-auto py-12 sm:py-18 lg:py-30">
+          <h6 class="text-3xl md:text-5xl font-bold font-title text-primary">
+            Subscribe to our <br />
+            <span class="text-secondary">Blog</span>
+          </h6>
+          <p class="max-w-xs mx-auto text-primary py-6">
+            Please subscribe to get regular updates and featured news through
+            your email!
+          </p>
+          <input
+            type="email"
+            class="px-8 py-2 rounded-t-3xl border border-blue-200 shadow-inner focus:outline-none"
+            placeholder="Email Address"
+          />
+          <input
+            type="submit"
+            value="Submit"
+            class="-ml-12 px-8 py-2 rounded-3xl bg-secondary text-white hover:bg-blue-800 focus:outline-none focus:ring-1 cursor-pointer"
+          />
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-primary py-8">
+        <div
+          class="text-center text-white font-black font-title tracking-wider"
+        >
+          All rights reserved @2022
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
